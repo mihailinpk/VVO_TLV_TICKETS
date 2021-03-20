@@ -64,7 +64,7 @@ public class TicketsController {
             durationSecList.add(service.getDurationSecBetweenDepartureAndArrivalDateTime(ticket));
         }
         Collections.sort(durationSecList);
-        int indexOfElement = service.getIndexOfListForPercetnile(durationSecList, percentileValue);
+        int indexOfElement = service.getIndexOfListForPercentile(durationSecList, percentileValue);
         Duration percentileDuration = Duration.ofSeconds(durationSecList.get(indexOfElement));
         System.out.println("\n" + percentileValue + "-й процентиль:");
         service.printDuration(percentileDuration);

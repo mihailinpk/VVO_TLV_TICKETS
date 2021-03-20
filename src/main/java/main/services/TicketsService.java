@@ -18,7 +18,7 @@ public class TicketsService {
         return Duration.between(departureDateTime, arrivalDateTime).toSeconds();
     }
 
-    public int getIndexOfListForPercetnile(List<Long> duratinSecList, int percentileValue) {
+    public int getIndexOfListForPercentile(List<Long> duratinSecList, int percentileValue) {
         return percentileValue*duratinSecList.size()/TOTAL_PERCENTS;
     }
 
